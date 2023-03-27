@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="text.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap">
@@ -14,18 +16,27 @@
 <body>
     <header>
         <div class="topo">
-            <div class="topo-azul"></div>
-            <div class="topo-dourado"></div>
+            <div id="topo-azul"></div>
+            <div id="topo-dourado"></div>
         </div>
-        <div class="botoes-top"></div>
-        <h1 id="titulo">Olá,<br>{desenvolver}.</h1>
+        <section class="icons-top">
+            <div id="icons-top">
+                <img src="icons/icon-exit.svg" alt="sair">
+            </div>
+        </section>
+        <section id="titulo">
+            <h1>Olá, {desenvolver}!</h1>
+            <h2>Estamos na semana 9</h2>
+        </section>
     </header>
 
     <main>
-        <div class="container">
-            <h3>Qual o seu primeiro nome?</h3>
-            <input id="input-azul" type="text">
-            <button id="botao-principal">Continuar</button>
+        <div class="container-links">
+            <a id="link-calendar" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="icons/icon-calendar.svg" alt="agendar mentoria">
+                <h4>Agendar mentoria [turma 13]</h4>
+            </a>
+            
         </div>
     </main>
 
