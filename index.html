@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="text.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap">
@@ -14,24 +16,62 @@
 <body>
     <header>
         <div class="topo">
-            <div class="topo-azul"></div>
-            <div class="topo-dourado"></div>
+            <div id="topo-azul"></div>
+            <div id="topo-dourado"></div>
         </div>
-        <div class="botoes-top"></div>
-        <h1 id="titulo">Olá,<br>{desenvolver}.</h1>
+        <section class="icons-top">
+            <div id="icons-top">
+                <img src="icons/icon-exit.svg" alt="sair">
+            </div>
+        </section>
+        <section class="titulo">
+            <div id="titulo">
+                <h1>Olá, {desenvolver}!</h1>
+                <h2>Estamos na semana 9</h2>
+            </div>
+        </section>
     </header>
 
     <main>
-        <div class="container">
-            <h3>Qual o seu primeiro nome?</h3>
-            <input id="input-azul" type="text">
-            <button id="botao-principal">Continuar</button>
-        </div>
+        <section class="container">
+            <div class="link">
+                <a id="link-board" href="https://miro.com/app/board/uXjVPszXvBw=/" target="_blank" rel="noopener noreferrer">
+                    <div id="link-board-interno">
+                        <img src="icons/icon-board.svg" alt="apresentação">
+                        <h4>Board de apresentação</h4>
+                    </div>
+                    <img src="icons/icon-external.svg">
+                </a>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Alura</h3>
+            <div class="alura">
+                <a id="link-alura" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/icon-alura.svg" alt="agendar mentoria">
+                    <h4>Alura FullStack</h4></a>
+                <a id="link-alura" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/icon-alura.svg" alt="agendar mentoria">
+                    <h4>Alura Línguas</h4></a>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Discord</h3>
+            <div class="discord">
+                <a id="link-discord" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/icon-gb.svg" alt="agendar mentoria">
+                    <h4>Grupo Boticário</h4></a>
+                <a id="link-discord" href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="icons/icon-alura-gray.svg" alt="agendar mentoria">
+                    <h4>Alura</h4></a>
+            </div>
+        </section>
     </main>
-
     <footer>
-        <img id="logo-rodape" src="imgs/desenvolve_logo_oficial.png">
-        <h6 id="texto-rodape">este site foi desenvolvido por Felipe de Goes, aluno do Projeto Desenvolve 2023</h6>
+        <section class="footer">
+            <img id="logo-rodape" src="imgs/desenvolve_logo_oficial.png">
+            <h6 id="texto-rodape">Este site foi desenvolvido por Felipe de Goes, aluno do Projeto Desenvolve 2023</h6>
+        </section>
     </footer>
 </body>
 </html>
