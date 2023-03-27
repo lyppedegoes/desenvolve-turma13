@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
+    width: 100vw;
+}
+
+.limite-header {
+    display: flex;
+    align-content: center;
+    max-width: 400px;
+}
+
+.topo {
+    display: flex;
+    width: 100vw;
+}
+
+#topo-azul {
+    width: 75%;
+    height: 8px;
+    background: #011E38;
+}
+
+
+#topo-dourado {
+    width: 25%;
+    height: 8px;
+    background: #F5C08C;
+}
+
+.icons-top {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+}
+
+#icons-top {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 16px 32px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    width: 400px;
+    max-width: 400px;
+}
