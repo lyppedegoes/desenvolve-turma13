@@ -45,6 +45,9 @@ header {
     gap: 24px;
     min-width: 345px;
     max-width: 400px;
+
+    animation: fadeIn;
+    animation-duration: 1.0s;
 }
 
 #titulo {

@@ -22,55 +22,26 @@ main {
     gap: 16px;
 }
 
-#link-calendar {
+#link {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 8px 8px 8px 16px;
-
-    width: 100%;
+    
     max-width: 400px;
-    height: 56px;
-
+    
     background: #F3F3F3;
     border-radius: 4px;
-
+    
     text-decoration: none;
     color: #364372;
+    
+        animation: fadeIn;
+        animation-duration: 1s;
 }
 
-#link-videos {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px 8px 8px 16px;
-
-    width: 100%;
-    max-width: 400px;
-    height: 56px;
-
-    background: #F3F3F3;
-    border-radius: 4px;
-
-    text-decoration: none;
-    color: #364372;
-
-}
-
-#link-board {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px 8px 8px 16px;
-
-    max-width: 400px;
-
-    background: #F3F3F3;
-    border-radius: 4px;
-
-    text-decoration: none;
-    color: #364372;
-
+#link:hover {
+    background: #efefef; 
 }
 
 #link-board-interno {
@@ -83,13 +54,12 @@ main {
     max-width: 400px;
     height: 56px;
 
-    background: #F3F3F3;
     border-radius: 4px;
 
     text-decoration: none;
-    color: #364372;
-    
+    color: #364372; 
 }
+
 
 .container {
     display: flex;
@@ -107,6 +77,9 @@ main {
 }
 
 #link-alura {
+    animation: fadeIn;
+    animation-duration: 2.5s;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,7 +94,12 @@ main {
 
     text-decoration: none;
     color: #364372;
-    
+
+}
+
+#link-alura:hover {
+
+background: #efefef;
 }
 
 .discord {
@@ -145,7 +123,13 @@ main {
 
     text-decoration: none;
     color: #F3F3F3;
-    
+
+    animation: fadeIn;
+    animation-duration: 4.0s;
+}
+
+#link-discord:hover {
+    background: #323f6c;
 }
 
 #input-azul {
