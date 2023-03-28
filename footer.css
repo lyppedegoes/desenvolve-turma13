@@ -1,6 +1,4 @@
 footer {
-    position:fixed;
-    bottom: 0;
     width: 100vw;
 
     background: #F1EDE9;
@@ -18,4 +16,5 @@ footer {
 
 #logo-rodape {
     width: 142px;
+    height: auto;
 }
