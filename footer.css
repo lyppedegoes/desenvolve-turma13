@@ -1,26 +1,32 @@
 footer {
     width: 100vw;
-
     background: #F1EDE9;
 }
 
 
 .footer {
     display: flex;
-    align-content: flex-end;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    padding: 32px;
-    text-align: right;
+    padding: 16px;
+    gap: 16px;
+    text-align: center;
 }
 
 #logo-rodape {
-    width: 142px;
-    height: 53px;
+    width: 107px;
+    height: 40px;
 }
 
-#rodape {
+#rodape-texto {
     display: flex;
     align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+#rodape-icons {
+    display: flex;
     gap: 16px;
 }
