@@ -16,5 +16,11 @@ footer {
 
 #logo-rodape {
     width: 142px;
-    height: auto;
+    height: 53px;
+}
+
+#rodape {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }

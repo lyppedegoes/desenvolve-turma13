@@ -163,3 +163,59 @@ background: #efefef;
 #link-discord:hover {
     background: #323f6c;
 }
+
+
+#agenda {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+#link-agenda {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    
+    max-width: 400px;
+    
+    background: #F3F3F3;
+    border-radius: 4px;
+    
+    text-decoration: none;
+    color: #364372;
+    
+        animation: fadeIn;
+        animation-duration: 1s;
+}
+
+#link-agenda:hover {
+    background: #efefef; 
+}
+
+
+#data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #364372;
+    color: #F3F3F3;
+    border-radius: 4px;
+    width: 36px;
+    height: 40px;
+    
+}
+
+#minutos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5C08C;
+    color: #364372;
+    border-radius: 4px;
+    width: 36px;
+    height: 40px;
+}
