@@ -24,76 +24,25 @@
         </div>
         <section class="icons-top">
             <div id="icons-top">
-                <a href="/index.html"><img src="icons/icon-exit.svg" alt="sair"></a>
+                <!-- <a href="/index.html"><img src="icons/icon-exit.svg" alt="sair"></a> -->
             </div>
         </section>
         <section class="titulo">
             <div id="titulo">
-                <h1>Olá, {desenvolver}!</h1>
-                <h2 id="text-blue">Estamos na semana 9</h2>
+                <h1>Olá, {<br>&emsp;desenvolver<br>}</h1>
             </div>
         </section>
     </header>
 
     <main>
         <section class="container">
-            <div class="link">
-                <a id="link" href="/agenda.html">
-                    <div id="link-board-interno">
-                        <img src="icons/icon-calendar.svg" alt="apresentação">
-                        <h4>Mentoria pessoal (agendamento)</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="link">
-                <a id="link" href="/videos.html">
-                    <div id="link-board-interno">
-                        <img src="icons/icon-video.svg" alt="apresentação">
-                        <h4>Gravaçoes dos encontros</h4>
-                    </div>
-                </a>
-            </div>
-            <div class="link">
-                <a id="link" href="https://miro.com/app/board/uXjVPszXvBw=/" target="_blank" rel="noopener noreferrer">
-                    <div id="link-board-interno">
-                        <img src="icons/icon-board.svg" alt="apresentação">
-                        <h4>Board de apresentação</h4>
-                    </div>
-                    <img src="icons/icon-external.svg">
-                </a>
-            </div>
+            <form>
+                <label for="inputNome"><h3>Qual o seu primeiro nome?</h3></label>
+                <input type="text" id="inputNome" name="nome" required>
+                <button type="submit" id="botaoContinuar">Continuar</button>
+            </form>
         </section>
-        <section class="container">
-            <h3>Alura</h3>
-            <div class="alura">
-                <a id="link-alura" href="https://cursos.alura.com.br/dashboard" target="_blank" rel="noopener noreferrer">
-                    <div id="link-board-interno">
-                        <img src="icons/icon-alura.svg" alt="Alura Dashboard">
-                        <h4>Alura FullStack</h4>
-                    </div>
-                    <img src="icons/icon-external.svg"></a>
-                    <a id="link-alura" href="https://cursos.aluralingua.com.br/dashboard" target="_blank" rel="noopener noreferrer">
-                        <div id="link-board-interno">
-                            <img src="icons/icon-alura.svg" alt="Alura Dashboard">
-                            <h4>Alura Língua</h4>
-                        </div>
-                        <img src="icons/icon-external.svg">
-                    </a>
-            </div>
-        </section>
-        <section class="container">
-            <h3>Discord</h3>
-            <div class="discord">
-                <a id="link-discord" href="https://discord.com/channels/1060666923727212637/1060666924196966494" target="_blank" rel="noopener noreferrer">
-                    <img src="icons/icon-gb.svg" alt="Discord Grupo Boticário">
-                    <h4>Grupo Boticário</h4>
-                </a>
-                <a id="link-discord" href="https://discord.com/channels/834111810725871677/996765626087505950" target="_blank" rel="noopener noreferrer">
-                    <img src="icons/icon-alura-gray.svg" alt="Discord Alura">
-                    <h4>Alura</h4>
-                </a>
-            </div>
-        </section>
+
     </main>
     <footer>
         <section class="footer">
@@ -101,5 +50,6 @@
             <h6 id="texto-rodape">Este site foi desenvolvido por Felipe de Goes, aluno do Projeto Desenvolve 2023</h6>
         </section>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

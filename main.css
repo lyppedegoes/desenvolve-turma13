@@ -17,6 +17,36 @@ main {
     max-width: 400px;
 }
 
+button {
+    background-color: #264FEC;
+    color: #F3F3F3;
+    border: 0;
+    border-radius: 4px;
+    height: 40px;
+
+    font-weight: 500;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    border: 1px solid #011E38;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0px 8px;
+
+    color: #264FEC;
+    font-weight: 600;
+    font-size: 14px;
+
+
+}
+
 .link {
     display: flex;
     flex-direction: column;
@@ -59,8 +89,8 @@ main {
     border-radius: 4px;
 
     text-decoration: none;
-    color: #364372; 
 }
+
 
 
 .container {
@@ -113,8 +143,8 @@ background: #efefef;
 #link-discord {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 8px 16px;
+    align-items: flex-start;
+    padding: 8px 8px 8px 16px;
     gap: 8px;
 
     width: 100%;

@@ -28,6 +28,7 @@ header {
     display: flex;
     align-items: center;
     width: 100vw;
+    height: 48px;
 }
 
 #icons-top {
@@ -53,4 +54,8 @@ header {
 #titulo {
     display: flex;
     flex-direction: column;
+}
+
+#semana {
+    color: blue;
 }
