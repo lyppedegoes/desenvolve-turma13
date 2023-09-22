@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="text.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Projeto Desenvolve 2013 [turma 13]</title>
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <div id="topo-azul"></div>
+            <div id="topo-dourado"></div>
+        </div>
+        <section class="icons-top">
+            <div id="icons-top">
+                <a href="index.html"><img src="icons/icon-exit.svg" alt="sair"></a>
+            </div>
+        </section>
+        <section class="titulo">
+            <div id="titulo">
+
+                <h1 id="mensagem"></h1>
+                <h2 id="semana"></h2>
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+                <script>
+                  const nome = localStorage.getItem('nome');
+                  const mensagem = document.querySelector('#mensagem');
+                  mensagem.textContent = `Olá, ${nome}!`;
+                
+                  const inicioSemana = moment('2023-01-22');
+                  const hoje = moment();
+                  const semanaAtual = hoje.diff(inicioSemana, 'weeks') + 1;
+                  const semana = document.querySelector('#semana');
+                  semana.textContent = `estamos na semana ${semanaAtual}`;
+                </script>
+
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="link">
+                <a id="link" href="agenda.html">
+                    <div id="link-board-interno">
+                        <img src="icons/icon-calendar.svg" alt="apresentação">
+                        <h4>Mentoria pessoal (agendamento)</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="link">
+                <a id="link" href="videos.html">
+                    <div id="link-board-interno">
+                        <img src="icons/icon-video.svg" alt="apresentação">
+                        <h4>Gravações dos encontros</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="link">
+                <a id="link" href="https://miro.com/app/board/uXjVPszXvBw=/" target="_blank" rel="noopener noreferrer">
+                    <div id="link-board-interno">
+                        <img src="icons/icon-board.svg" alt="apresentação">
+                        <h4>Board de apresentação</h4>
+                    </div>
+                    <img src="icons/icon-external.svg">
+                </a>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Alura</h3>
+            <div class="alura">
+                <a id="link-alura" href="https://cursos.alura.com.br/dashboard" target="_blank" rel="noopener noreferrer">
+                    <div id="link-board-interno">
+                        <img src="icons/icon-alura.svg" alt="Alura Dashboard">
+                        <h4>Alura FullStack</h4>
+                    </div>
+                    <img src="icons/icon-external.svg"></a>
+                    <a id="link-alura" href="https://cursos.aluralingua.com.br/dashboard" target="_blank" rel="noopener noreferrer">
+                        <div id="link-board-interno">
+                            <img src="icons/icon-alura.svg" alt="Alura Dashboard">
+                            <h4>Alura Língua</h4>
+                        </div>
+                        <img src="icons/icon-external.svg">
+                    </a>
+            </div>
+        </section>
+        <section class="container">
+            <h3>Discord</h3>
+            <div class="discord">
+                <a id="link-discord" href="https://discord.com/channels/1060666923727212637/1060666924196966494" target="_blank" rel="noopener noreferrer">
+
+                    <div id="link-board-interno">
+                        <img src="icons/icon-gb.svg" alt="Discord Grupo Boticário">
+                        <h4>Grupo Boticário</h4>
+                    </div>
+                    <img src="icons/icon-external.svg"></a>
+
+                </a>
+                <a id="link-discord" href="https://discord.com/channels/834111810725871677/996765626087505950" target="_blank" rel="noopener noreferrer">
+                    <div id="link-board-interno">
+                        <img src="icons/icon-alura-gray.svg" alt="Discord Alura">
+                        <h4>Alura</h4>
+                    </div>
+                    <img src="icons/icon-external.svg"></a>    
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div id="rodape-texto">
+                <img id="logo-rodape" src="imgs/desenvolve_logo_oficial.png">
+            </div>
+            <h6 id="texto-rodape">Este site foi desenvolvido por Felipe de Goes, aluno do Projeto Desenvolve 2023</h6>
+            <div id="rodape-icons">
+                <a href="https://github.com/lyppedegoes/desenvolve-turma13" target="_blank" rel="noopener noreferrer"><img src="icons/icon-github.svg"></a>
+                <a href="https://www.linkedin.com/in/felipedegoes/" target="_blank" rel="noopener noreferrer"><img src="icons/icon-linkedin.svg"></a>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
